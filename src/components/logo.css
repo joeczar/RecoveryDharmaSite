@@ -1,0 +1,27 @@
+#RDlogo h1{
+    color: #DED596 !important;
+    line-height: 1.1ex !important;
+    font-weight: 700 !important;
+    margin-top: 0.5ex;
+    text-decoration: none !important;
+    
+  }
+  #logoWrapper {
+    text-align: left;
+    padding: 1ex;
+  }
+  
+  #germany h2 {
+    color: lightgray;
+  }
+  #RLogo {
+    font-size: 3.5ex;
+  }
+  #DLogo {
+    font-size: 4ex;
+  }
+  #germany {
+    font-size: small;
+    color: lightgray;
+  }
+  

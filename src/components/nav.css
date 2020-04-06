@@ -1,0 +1,18 @@
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: lightgray;
+
+    }
+    a:hover {
+        color: white;
+    }
+  
+  
+#responsive-navbar-nav {
+    justify-content: space-evenly;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("../images/DharmaWheel.png")!important    ;
+  }
