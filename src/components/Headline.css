@@ -1,18 +1,15 @@
 .quoteWrapper {
     margin-top: 3ex;
     
+    
 }
 .card {
     background-color: #283445;
-    color:#DED596;
+    
 }
 
 .card-body {
     padding: 1rem;
     padding-top: 0rem;
-    color:#DED596;
-}
-.card-title {
-    
-    color:#DED596;
+
 }

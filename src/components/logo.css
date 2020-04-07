@@ -1,6 +1,6 @@
 #RDlogo h1{
     color: #DED596 !important;
-    line-height: 1ex !important;
+    line-height: 0.7ex !important;
     font-weight: 700 !important;
     margin-top: 0.5ex;
     text-decoration: none !important;
@@ -15,10 +15,10 @@
     color: lightgray;
   }
   #RLogo {
-    font-size: 3.5ex;
+    font-size: 2.8ex;
   }
   #DLogo {
-    font-size: 4ex;
+    font-size: 3.2ex;
   }
   #germany {
     font-size: small;

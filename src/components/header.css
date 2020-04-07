@@ -1,11 +1,13 @@
 header {
     padding:1ex;
     height: 11ex;
+    
 }
 #navWrapper {
     width: 100%;
     justify-content: right;
     text-emphasis: right;
+    display: flex;
 }
 nav {
     width: 100%;
