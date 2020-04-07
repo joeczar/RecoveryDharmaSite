@@ -43,10 +43,9 @@ const Layout = ({ children }) => {
           }}
         >
         
-        <Container className="siteContent">
+        
           <main>{children}</main>
-        </Container>
-        <ContactBar />
+       
         
       </div>
       <footer id="footer">

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout.js"
 import SEO from "../components/seo"
 import Article from "../components/article.js"
+import ContactBar from '../components/contactBar.js'
 
 export default () => (
   <Layout>
@@ -38,5 +39,6 @@ export default () => (
         be decided by the community itself.
       </p>
     </Article>
+    <ContactBar />
   </Layout>
 )
