@@ -7,6 +7,7 @@ export default ({ day, time, location }) => (
       <thead>
         <tr>
           <th>{day}</th>
+          
         </tr>
       </thead>
       <tbody>

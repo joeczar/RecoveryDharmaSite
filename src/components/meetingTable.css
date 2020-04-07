@@ -1,0 +1,11 @@
+Table {
+    width: 300rem;
+    margin:1rem;
+}
+.tableWrapper {
+    width: 50rem;
+}
+
+th {
+    margin-left: 1rem;
+}

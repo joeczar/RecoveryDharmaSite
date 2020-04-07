@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from "prop-types"
 import Card from 'react-bootstrap/Card'
+
 import './Headline.css'
 
 const Headline = ({children}) => (
@@ -9,6 +10,7 @@ const Headline = ({children}) => (
   <Card.Body>
   <Card.Title>{children}</Card.Title>
   </Card.Body>
+
   </Card>
   </div>
 )

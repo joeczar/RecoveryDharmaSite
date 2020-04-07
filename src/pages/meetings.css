@@ -1,0 +1,7 @@
+#meetings {
+    display: flex;
+    flex-direction: row;
+}
+#end {
+    flex: 1;
+}
