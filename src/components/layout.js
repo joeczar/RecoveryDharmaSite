@@ -8,13 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Container from "react-bootstrap/Container"
 import DharmaWheel from '../images/DharmaWheel.svg'
+import SEO from './seo.js'
 import Header from "./header"
-import ContactBar from './contactBar.js'
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageName }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -31,7 +30,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    
+        <SEO title={pageName} />
         <Header menuLinks={data.site.siteMetadata.menuLinks} />
         <div 
           className="site"

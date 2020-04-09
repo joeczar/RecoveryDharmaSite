@@ -1,12 +1,10 @@
 import React from "react"
 import Layout from "../components/layout.js"
-import SEO from "../components/seo"
 import Article from "../components/article.js"
 import ContactBar from '../components/contactBar.js'
 
 export default () => (
-  <Layout>
-    <SEO title="About" />
+  <Layout pageName='About'>
     <Article title="About Us">
       <p>
         Recovery Dharma is a peer-led, grass-roots, democratically-structured

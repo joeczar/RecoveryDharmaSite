@@ -3,39 +3,38 @@ import { Link } from "gatsby"
 import "./nav.css"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
-import Logo from './logo.js'
+import Logo from "./logo.js"
 
 class Navi extends React.Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Navbar.Brand>
-        <Link id='logoLink'
-          to="/"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          <Logo />
-        </Link>
+          <Link
+            id="logoLink"
+            to="/"
+            style={{
+              textDecoration: `none`,
+            }}
+          >
+            <Logo />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto" justify>
-          {this.props.menuLinks.map((link, index) => (
-            <Nav.Item>
-              <Nav.Link>
-            <Link
-              className="navLinks"
-              style={{ color: `lightgray` }}
-              to={link.link}
-              key={index}
-            >
-              {link.name}
-            </Link>
-            </Nav.Link>
-            </Nav.Item>
-          ))}
+          <Nav className="mr-auto" justify>
+            {this.props.menuLinks.map((link, index) => (
+              <Nav.Item key={index}>
+                <Link
+                  className="navLinks"
+                  style={{ color: `lightgray` }}
+                  to={link.link}
+                  key={index}
+                >
+                  {link.name}
+                </Link>
+              </Nav.Item>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

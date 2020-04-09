@@ -1,0 +1,35 @@
+import {format} from 'date-fns'
+import {Link} from 'gatsby'
+import React from 'react'
+import {buildImageObj, cn, getBlogUrl} from '../lib/helpers'
+import {imageUrlFor} from '../lib/image-url'
+import PortableText from './portableText'
+import './postPreview.css'
+
+function PostPreview (props) {
+  return (
+    <div className='postPreviewWrapper'>
+      <div className='imageWrapper'>
+        {props.mainImage && props.mainImage.asset && (
+          <img
+            className='previewImage'
+            src={props.mainImage.asset.fluid.src}
+            alt={props.mainImage.alt}
+            width='80em'
+          />
+        )}
+      </div>
+      <div className='postPreviewBody'>
+        <h3 className='previewTitle'>{props.title}</h3>
+        {props._rawExcerpt && (
+          <div className='portableTextWrapper'>
+            <PortableText blocks={props._rawExcerpt} />
+          </div>
+        )}
+        <div>{format(new Date(props.publishedAt), 'dd.MM.yyyy')}</div>
+      </div>
+    </div>
+  )
+}
+
+export default PostPreview

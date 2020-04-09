@@ -13,6 +13,9 @@
 #responsive-navbar-nav {
     justify-content: space-evenly;
 }
+.mr-auto{
+  width: 100%;
+}
 .navbar-dark .navbar-toggler-icon {
     background-image: url("../images/DharmaWheel.png")!important    ;
   }

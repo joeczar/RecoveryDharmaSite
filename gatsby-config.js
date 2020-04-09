@@ -1,28 +1,42 @@
 module.exports = {
   siteMetadata: {
     title: `Recovery Dharma Germany`,
-    description: `Recovery Dharma is a peer-led, grass-roots, democratically-structured organization. Our mission is to support individuals on their path of recovery from addiction using Buddhist practices and principles.>`,
+    description: `Recovery Dharma is a peer-led, grass-roots, democratically-structured organization. Our mission is to support individuals on their path of recovery from addiction using Buddhist practices and principles.`,
     author: `@JoeCzar`,
     menuLinks:[ 
       {
-        name:'home',
+        name:'Home',
         link:'/'
       },
       {
-        name:'about',
+        name:'About',
         link:'/about'
       },
       {
-        name:'meetings',
+        name:'Meetings',
         link:'/meetings'
       },
       {
-        name:'contact',
+        name:'Contact',
         link:'/contact'
       },
+      {
+        name: 'Updates',
+        link: '/updates'
+      }
     ]
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: '1xfm2h8z',
+        dataset: 'production',
+        // a token with read permissions is required
+        // if you have a private dataset
+        token: process.env.MY_SANITY_TOKEN,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

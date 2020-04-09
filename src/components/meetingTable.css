@@ -1,11 +1,30 @@
+#meetintTables {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-left: 0;
+}
 Table {
-    width: 300rem;
     margin:1rem;
 }
-.tableWrapper {
-    width: 50rem;
+.table-responsive-sm {
+    margin: 1ex;
+    display: inline-flex;
+    width: 37ex;    
+    
 }
 
 th {
     margin-left: 1rem;
 }
+.address {
+    display: block;
+    color: #DED596;
+}
+.locationName {
+    color: #DC9B2C;
+}
+

@@ -1,0 +1,27 @@
+.postPreviewWrapper {
+    background-color: #283445;
+    padding: 1ex;
+    display: flex;
+    
+}
+.imageWrapper {
+   min-width:10ex;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.previewImage {
+    
+    margin-bottom:50%;
+    display: block;
+    
+}
+.postPreviewBody {
+    margin:1ex;
+}
+.previewTitle {
+    font-size: larger;
+    font-weight: 600;
+    color:#DED596;
+}

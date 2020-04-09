@@ -1,15 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Article from "../components/article.js"
 import Headline from "../components/Headline.js"
 import ContactBar from "../components/contactBar.js"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
+  <Layout pageName='Home'>
     <Headline>
       <h1>
         Using Buddhist Practices and Principles to Heal the Suffering of

@@ -1,23 +1,55 @@
 import React from "react"
 import Layout from "../components/layout.js"
 import MeetingTable from "../components/meetingTable.js"
+import ContactBar from '../components/contactBar'
 import Container from "react-bootstrap/Container"
+import { useStaticQuery, graphql } from "gatsby"
 
-export default () => (
-  <Layout>
+const Meetings = () => {
+
+  const data = useStaticQuery(graphql`
+      {
+        allSanityMeeting(sort: {fields: _createdAt}) {
+          totalCount
+          edges {
+            node {
+              day
+              time
+              location {
+                venuName
+                streetaddress
+                zipcode
+                city
+              }
+            }
+          }
+        }
+      }
+    `)
+    
+  
+return (
+  <Layout pageName='Meetings'>
     <Container id='meetings'>
+    <h1 className="pageName">Meetings</h1>
       <div id="meetingTables">
-        <h1 className="pageName">Meetings</h1>
+      
+        {data.allSanityMeeting.edges.map((meeting, index) => 
         <MeetingTable
-          day="Sunday"
-          time="10:30"
-          location="Fehrbelliner Straße 92"
+          day={meeting.node.day}
+          time={meeting.node.time}
+          location={meeting.node.location}
+          key={index}
         />
-        <MeetingTable day="Monday" time="19:00" location="Kinzigstr. 25-29" />
-        <MeetingTable day="Wednsday" time="20:00" location="Kinzigstr. 25-29" />
-        <MeetingTable day="Thursday" time="20:00" location="Kinzigstr. 25-29" />
+        )}
+        
+        
+        
         <span id='end' />
       </div>
     </Container>
+    <ContactBar />
   </Layout>
 )
+}
+export default Meetings
