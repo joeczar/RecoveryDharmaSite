@@ -1,0 +1,14 @@
+.root {
+ font-size: large;
+ justify-self: right;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-content: flex-end;
+}
+.headline {
+    font-size: large;
+}
+.list {
+    list-style-type: none;
+}

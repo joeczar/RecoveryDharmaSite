@@ -6,8 +6,12 @@ import {imageUrlFor} from '../lib/image-url'
 import PortableText from './portableText'
 import './postPreview.css'
 
-function PostPreview (props) {
+const PostPreview = (props) => {
   return (
+    <Link
+      className='postLink'
+      to={getBlogUrl(props.publishedAt, props.slug.current)}
+    >
     <div className='postPreviewWrapper'>
       <div className='imageWrapper'>
         {props.mainImage && props.mainImage.asset && (
@@ -29,6 +33,7 @@ function PostPreview (props) {
         <div>{format(new Date(props.publishedAt), 'dd.MM.yyyy')}</div>
       </div>
     </div>
+    </Link>
   )
 }
 

@@ -1,0 +1,17 @@
+.articleTitle {
+    text-align: center;
+}
+
+.root {
+   text-align: right;
+    justify-self: right;
+}
+.excerptDateWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #DC9B2C;
+}
+.excerpt {
+    margin-left:1ex;
+}

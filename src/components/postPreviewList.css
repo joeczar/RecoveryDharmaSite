@@ -1,0 +1,9 @@
+.postList {
+    list-style-type: none;
+}
+.postLink {
+    color: lightgray;
+}
+.postLink:hover {
+    color: lightgray;
+}
