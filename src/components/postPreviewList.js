@@ -4,7 +4,7 @@ import PostPreview from './postPreview'
 import './postPreviewList.css'
 
 function PostPreviewGrid (props) {
-    console.log(props)
+   
   return (
     <div className='postPreviewListWrapper'>
       <h2>{props.title}</h2>

@@ -7,6 +7,10 @@ const {isFuture} = require('date-fns')
 
 const {format} = require('date-fns')
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 async function createBlogPostPages (graphql, actions) {
   const {createPage} = actions
   const result = await graphql(`

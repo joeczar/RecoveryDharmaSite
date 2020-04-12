@@ -3,19 +3,16 @@ import { navigate } from 'gatsby'
 import Recaptcha from 'react-google-recaptcha'
 import Container from "react-bootstrap/Container"
 
-
-const RECAPTCHA_KEY = '6Le6hOgUAAAAALXsZpz8diTLHCBEVH3pc6vMEv3n'
 console.log(process.env)
-
-// const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
-// if (typeof RECAPTCHA_KEY === 'undefined') {
-//   throw new Error(`
-//   Env var GATSBY_APP_SITE_RECAPTCHA_KEY is undefined! 
-//   You probably forget to set it in your Netlify build environment variables. 
-//   Make sure to get a Recaptcha key at https://www.netlify.com/docs/form-handling/#custom-recaptcha-2-with-your-own-settings
-//   Note this demo is specifically for Recaptcha v2
-//   `)
-// }
+const RECAPTCHA_KEY = process.env.GATSBY_APP_SITE_RECAPTCHA_KEY
+if (typeof RECAPTCHA_KEY === 'undefined') {
+  throw new Error(`
+  Env var GATSBY_APP_SITE_RECAPTCHA_KEY is undefined! 
+  You probably forget to set it in your Netlify build environment variables. 
+  Make sure to get a Recaptcha key at https://www.netlify.com/docs/form-handling/#custom-recaptcha-2-with-your-own-settings
+  Note this demo is specifically for Recaptcha v2
+  `)
+}
 function encode(data) {
     return Object.keys(data)
       .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))

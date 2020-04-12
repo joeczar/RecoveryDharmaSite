@@ -28,6 +28,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-patronus`,
+      options: {
+        apiKey: process.env.GATSBY_APP_SITE_RECAPTCHA_KEY,
+      },
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
