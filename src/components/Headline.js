@@ -4,13 +4,13 @@ import Card from 'react-bootstrap/Card'
 
 import './Headline.css'
 
-const Headline = ({children}) => (
+const Headline = ({title, children}) => (
 <div className='quoteWrapper'>
 <Card className="text-center">
   <Card.Body>
-  <Card.Title>{children}</Card.Title>
+<Card.Title>{title}</Card.Title>
+  {children}
   </Card.Body>
-
   </Card>
   </div>
 )

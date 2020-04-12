@@ -1,5 +1,5 @@
 .quoteWrapper {
-    margin-top: 3ex;    
+    margin:3ex 0ex 2ex 0ex;    
 }
 .card {
     background-color: #283445;
@@ -8,4 +8,7 @@
     padding: 1rem;
     padding-top: 1rem;
 
+}
+.card-title {
+    font-size: 4ex;
 }

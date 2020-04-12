@@ -4,14 +4,17 @@ import Layout from "../components/layout"
 import Article from "../components/article.js"
 import Headline from "../components/Headline.js"
 import ContactBar from "../components/contactBar.js"
+import DharmaWheel from '../svg/DharmaWheel.svg'
+
+import './home.css'
 
 const IndexPage = () => (
   <Layout pageName='Home'>
-    <Headline>
-      <h1>
-        Using Buddhist Practices and Principles to Heal the Suffering of
-        Addiction
-      </h1>
+    <Headline
+      title='Using Buddhist Practices and Principles to Heal the Suffering of
+      Addiction'
+    >
+      <DharmaWheel fill='lightgray' width='4ex'/>
     </Headline>
     <Article
       id="homeArticle"
