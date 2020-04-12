@@ -30,6 +30,10 @@ figure,
 footer {
   padding: .5rem;
   background-color: #555358;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
 }
 header ,
 main,
@@ -655,6 +659,16 @@ pre tt:after {
 .site-content {
   flex-grow:1;
   z-index: 5;
+}
+.flexWrapper {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+
+}
+#copyright {
+  justify-self: start;
 }
 
 @media only screen and (max-width: 480px) {

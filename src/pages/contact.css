@@ -1,0 +1,39 @@
+#contactContainer {
+    background-color: #283445;
+    padding: 1ex;
+    
+}
+.columnWrapper {
+    display: flex;
+    flex-direction: row!important;
+    justify-content: flex-start;
+}
+#contactText {
+    font-size: 3ex;
+    font-weight: 100;
+    padding: 2ex;
+}
+#leftColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex:1;
+}
+#rightColumn {
+   
+
+    flex: 1;
+}
+#rightColumn .socialIcons {
+    fill:#555358;
+    height: 7ex;
+}
+#rightColumn .socialLinkList {
+    margin:3ex;
+}
+@media only screen and (max-width: 480px) {
+   .columnWrapper {
+       flex-direction: column!important;
+   }
+  }

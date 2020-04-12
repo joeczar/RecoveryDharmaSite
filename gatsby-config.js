@@ -28,6 +28,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/ // See below to configure properly 
+        }
+      }
+    },
+    {
       resolve: 'gatsby-source-sanity',
       options: {
         projectId: '1xfm2h8z',

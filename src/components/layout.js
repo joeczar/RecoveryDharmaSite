@@ -8,8 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import DharmaWheel from '../images/DharmaWheel.svg'
-import SEO from './seo.js'
+import DharmaWheel from "../svg/DharmaWheel.svg"
+import SEO from "./seo.js"
 import Header from "./header"
 import "./layout.css"
 
@@ -30,27 +30,27 @@ const Layout = ({ children, pageName }) => {
 
   return (
     <>
-        <SEO title={pageName} />
-        <Header menuLinks={data.site.siteMetadata.menuLinks} />
-        <div 
-          className="site"
-          style={{ 
-            backgroundImage: `url(${DharmaWheel})`,
-            backgroundRepeat: `no-repeat`,
-            backgroundPosition: `center`,
-            backgroundAttachment: `fixed`
-          }}
-        >
-        
-        
-          <main>{children}</main>
-       
-        
+      <SEO title={pageName} />
+      <Header menuLinks={data.site.siteMetadata.menuLinks} />
+      <div
+        className="site"
+        style={{
+          backgroundImage: `url(${DharmaWheel})`,
+          backgroundRepeat: `no-repeat`,
+          backgroundPosition: `center`,
+          backgroundAttachment: `fixed`,
+        }}
+      >
+        <main>{children}</main>
       </div>
       <footer id="footer">
-        © {new Date().getFullYear()}, Recovery Dharma Germany
+        
+          <div id="copyright">
+            © {new Date().getFullYear()}, Recovery Dharma Germany
+          </div>
+          
+        
       </footer>
-      
     </>
   )
 }

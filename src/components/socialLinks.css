@@ -1,0 +1,11 @@
+.socialIcons {
+
+    fill: #0F1016;
+}
+.socialLinkList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:0ex;
+}

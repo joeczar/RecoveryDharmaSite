@@ -16,10 +16,21 @@
 .mr-auto{
   width: 100%;
 }
+.nav-item {
+  padding:2ex;
+
+}
 .navbar-dark .navbar-toggler-icon {
     background-image: url("../images/DharmaWheel.png")!important    ;
   }
   .navbar {
  
     padding-top: 1ex;
+  }
+  #navSocial {
+
+  }
+  .nav-item .socialIcons {
+    height: 2ex !important;
+    fill: #DED596;
   }

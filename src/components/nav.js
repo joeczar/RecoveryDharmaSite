@@ -4,6 +4,7 @@ import "./nav.css"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import Logo from "./logo.js"
+import SocialLinks from './socialLinks'
 
 class Navi extends React.Component {
   render() {
@@ -35,6 +36,9 @@ class Navi extends React.Component {
                 </Link>
               </Nav.Item>
             ))}
+            <Nav.Item key='social'>
+              <SocialLinks id="navSocial" />
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
