@@ -1,7 +1,6 @@
 #meetings {
     display: flex;
     flex-direction: row;
-}
-#end {
-    flex: 1;
+    justify-content: center;
+    align-content: center;
 }

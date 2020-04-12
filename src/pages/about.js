@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../components/layout.js"
 import Article from "../components/article.js"
 import ContactBar from '../components/contactBar.js'
+import Container from 'react-bootstrap/Container'
 
 export default () => (
   <Layout pageName='About'>
-    <Article title="About Us">
+    <Container>
+    <Article title="About Recovery Dharma">
       <p>
         Recovery Dharma is a peer-led, grass-roots, democratically-structured
         organization. Our mission is to support individuals on their path of
@@ -37,6 +39,7 @@ export default () => (
         be decided by the community itself.
       </p>
     </Article>
+    </Container>
     <ContactBar />
   </Layout>
 )

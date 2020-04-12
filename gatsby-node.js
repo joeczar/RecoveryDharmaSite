@@ -7,9 +7,12 @@ const {isFuture} = require('date-fns')
 
 const {format} = require('date-fns')
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
+  const config = getConfig()
+  config.node = {
+      fs: 'empty'
+  }
+}
 
 async function createBlogPostPages (graphql, actions) {
   const {createPage} = actions

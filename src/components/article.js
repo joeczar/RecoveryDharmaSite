@@ -4,13 +4,13 @@ import './article.css'
 import Container from 'react-bootstrap/Container'
 
 const Article = ({title, children}) => (
-    <Container>
-    <div className='articleWrapper'>
-        <article>
-            <h1 className='articleTitle'>{title}</h1>
+    <Container className='flexColumn articleWrapper'>
+        <h1 className='articleTitle'>{title}</h1>
+        <hr className='article-hr' />
+        <article id='about'> 
+            
             <div className='articleContent'>{children}</div>
         </article>
-    </div>
     </Container>
 )
 Article.propTypes = {

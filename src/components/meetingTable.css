@@ -8,7 +8,7 @@
     margin-left: 0;
 }
 Table {
-    margin:1rem;
+    margin: auto;
 }
 .table-responsive-sm {
     margin: 1ex;
@@ -18,7 +18,7 @@ Table {
 }
 
 th {
-    margin-left: 1rem;
+    padding-left: 1rem;
 }
 .address {
     display: block;

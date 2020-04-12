@@ -17,20 +17,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
     flex:1;
 }
 #rightColumn {
-   
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     flex: 1;
 }
 #rightColumn .socialIcons {
     fill:#555358;
-    height: 7ex;
+    height: 5ex;
+}
+#rightColumn .socialIcons:hover {
+    color:#DED596;
 }
 #rightColumn .socialLinkList {
     margin:3ex;
+}
+.formWrapper {
+    margin:auto;
+}
+#formTitle {
+    text-align: center;
+}
+#submit {
+    background: #555358;
+    border: none;
+    padding: 1ex;
+    color: lightgray;
 }
 @media only screen and (max-width: 480px) {
    .columnWrapper {
