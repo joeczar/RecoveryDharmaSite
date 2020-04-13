@@ -653,9 +653,19 @@ pre tt:after {
   flex-direction: column;
   justify-content: space-evenly;
   background-color: none;
-  
-  z-index: 3;
+  background-image: url('../images/DharmaWheel-dark.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+  z-index: 0;
 }
+
+.container {
+  margin-top:2ex;
+  margin-bottom: 2ex;
+}
+
 
 .site-content {
   flex-grow:1;

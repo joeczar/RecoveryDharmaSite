@@ -4,6 +4,7 @@ import MeetingTable from "../components/meetingTable.js"
 import ContactBar from '../components/contactBar'
 import Container from "react-bootstrap/Container"
 import { useStaticQuery, graphql } from "gatsby"
+import './meetings.css'
 
 const Meetings = () => {
 

@@ -34,7 +34,7 @@ const Layout = ({ children, pageName }) => {
       <div
         className="site"
       >
-        <main>{children}</main>
+        <main className='glass'>{children}</main>
         
       </div>
       <footer id="footer">

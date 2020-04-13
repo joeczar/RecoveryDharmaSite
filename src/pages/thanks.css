@@ -1,0 +1,10 @@
+#dwThanks {
+    position: absolute;
+    z-index: 0;
+    top:10%;
+}
+#thankYouWrapper {
+    z-index: 5;
+    margin: auto;
+   
+}
