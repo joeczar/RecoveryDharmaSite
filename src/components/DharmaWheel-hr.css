@@ -2,17 +2,22 @@
     display:flex;
     flex-direction: row;
     color: #DC9B2C;
-    justify-content: center;
+    position: relative;
 }
 .hr-Wheel {
     width:2ex;
     fill:#DC9B2C;
+    position: relative;
+    top:-2ex;
 }
 .hr {
     border-bottom:1px solid #DC9B2C;
     width: 45%;
     color:#DC9B2C;
+    
 }
 .dot {
     margin:.5ex;
+    position: relative;
+    top:-2ex;
 }
