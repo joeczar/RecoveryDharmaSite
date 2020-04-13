@@ -6,6 +6,12 @@ article {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+article a {
+    color: #DC9B2C;
+}
+article a:hover {
+    color: #DC9B2C;
+}
 #about {
     background-color: rgb(0,0,0, 0);
 }
