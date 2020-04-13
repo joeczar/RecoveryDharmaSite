@@ -1,30 +1,25 @@
-#meetintTables {
+#meetingTables {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
-    margin-left: 0;
+    flex-wrap: wrap;
+   
 }
-Table {
-    margin: auto;
+#meetingTables h1 {
+    font-size: 4ex;
 }
-.table-responsive-sm {
-    margin: 1ex;
-    display: inline-flex;
-    width: 37ex;    
+.meetingWrapper {
+    flex:1;
+    background-color: #1f212e98;
+    margin:1ex;
+    padding:1ex;
+    min-width: 30ex;
+    max-width: 40ex;
     
 }
-
-th {
-    padding-left: 2rem;
-}
-.address {
+.block {
     display: block;
-    color: #DED596;
 }
-.locationName {
-    color: #DC9B2C;
+.locationWrapper {
+    font-size: 2.5ex;
+    display: flex;
+    flex-direction: column;
 }
-

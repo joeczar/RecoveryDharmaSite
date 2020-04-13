@@ -661,6 +661,24 @@ pre tt:after {
   z-index: 0;
 }
 
+
+/* transformations */
+.glass.down {
+  transform: translateY(100%) translateY(-5em) translateZ(0);
+}
+
+.glass.down::before {
+  transform: translateY(-100%) translateY(5em) translateZ(0);
+}
+
+.glass.up, .glass.up::before {
+  transform: translateY(0) translateZ(0);
+}
+
+/* transitions */
+.glass, .glass::before {
+  transition: transform 0.5s ease-out;
+}
 .container {
   margin-top:2ex;
   margin-bottom: 2ex;

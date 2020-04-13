@@ -31,19 +31,14 @@ const Layout = ({ children, pageName }) => {
     <>
       <SEO title={pageName} />
       <Header menuLinks={data.site.siteMetadata.menuLinks} />
-      <div
-        className="site"
-      >
-        <main className='glass'>{children}</main>
-        
+      <div className="site">
+        <main className="glass">{children}</main>
       </div>
+      
       <footer id="footer">
-        
-          <div id="copyright">
-            © {new Date().getFullYear()}, Recovery Dharma Germany
-          </div>
-          
-        
+        <div id="copyright">
+          © {new Date().getFullYear()}, Recovery Dharma Germany
+        </div>
       </footer>
     </>
   )
