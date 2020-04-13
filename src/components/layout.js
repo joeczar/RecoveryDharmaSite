@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import SEO from "./seo.js"
 import Header from "./header"
+import Footer from './footer'
+
 import "./layout.css"
 
 const Layout = ({ children, pageName }) => {
@@ -35,11 +37,7 @@ const Layout = ({ children, pageName }) => {
         <main className="glass">{children}</main>
       </div>
       
-      <footer id="footer">
-        <div id="copyright">
-          © {new Date().getFullYear()}, Recovery Dharma Germany
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

@@ -1,5 +1,4 @@
 .socialIcons {
-
     fill: #0F1016;
 }
 .socialLinkList {
@@ -8,4 +7,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin:0ex;
+}
+.socialIcons:hover {
+    fill:#DC9B2C;
 }

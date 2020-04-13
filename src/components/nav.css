@@ -24,6 +24,10 @@
 .navbar-dark .navbar-toggler-icon {
     background-image: url("../images/DharmaWheel.png")!important    ;
   }
+  .navbar-toggler-icon:hover {
+    background-image: url("../images/DharmaWheel-mustard.png")!important    ;
+  
+  } 
   .navbar {
  
     padding-top: 1ex;

@@ -8,6 +8,6 @@ export default () => (
     <span className="dot">·</span>
     <DharmaWheel className="hr-Wheel" fill=''/>
     <span className="dot">·</span>
-    <hr className='hr left' />
+    <hr className='hr right' />
   </div>
 )

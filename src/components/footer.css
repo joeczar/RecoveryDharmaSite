@@ -1,0 +1,19 @@
+#footer {
+    padding: .5rem;
+    background-color: #555358;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #copyright {
+      flex:1;
+  }
+  #impressumLink {
+      color:lightgray;
+  }
+  #footer a {
+      color: #DC9B2C;
+  }
+  #footer a:hover {
+    color: #DC9B2C;
+}

@@ -6,7 +6,6 @@ function PostPreviewGrid (props) {
    
   return (
     <div className='postPreviewListWrapper'>
-      <h2>{props.title}</h2>
       <ul className='postList'>
         {props.nodes.map(node => (
             <li key={node.id}>

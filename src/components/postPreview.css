@@ -4,6 +4,9 @@
     display: flex;
     
 }
+.postList a:hover {
+    text-decoration: none;
+}
 .imageWrapper {
    min-width:10ex;
    display: flex;
@@ -21,7 +24,8 @@
     margin:1ex;
 }
 .previewTitle {
-    font-size: larger;
-    font-weight: 600;
-    color:#DED596;
+   
+}
+.postList {
+    margin:0;
 }
