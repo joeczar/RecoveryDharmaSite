@@ -137,6 +137,9 @@ button { background: #555358;
   padding: 1ex;
   color: lightgray;
 }
+button:hover {
+  background-color: var(--headline-color);
+}
 select {
   text-transform: none;
 }
@@ -703,6 +706,7 @@ pre tt:after {
 }
 @media only screen and (max-width: 480px) {
   html {
-    font-size: 100%;
+    font-size: 90%;
+    padding: 0px;
   }
 }

@@ -10,6 +10,7 @@
   }
   #impressumLink {
       color:lightgray;
+      top:-1ex;
   }
   #footer a {
       color: #DC9B2C;
