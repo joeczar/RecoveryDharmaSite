@@ -2,30 +2,51 @@
     background-color: #283445;
     padding: 1ex;
     display: flex;
-    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
 }
 .postList a:hover {
     text-decoration: none;
 }
 .imageWrapper {
-   min-width:10ex;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   
+   text-align: center;
+   align-content: center;
+   flex:1;
+   margin:auto;
 }
 .previewImage {
+    max-height: 30ex;
     
-    margin-bottom:50%;
-    display: block;
+    
     
 }
 .postPreviewBody {
     margin:1ex;
+    flex:3;
 }
-.previewTitle {
-   
-}
+
 .postList {
     margin:0;
+}
+@media only screen and (max-width: 480px) {
+    .postPreviewWrapper {
+        flex-direction: column;
+    }
+    .image-wrapper {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin:auto!important;
+    
+    }
+    .previewImage {
+        max-height: 100%;
+        align-self: center;
+        
+    }
 }

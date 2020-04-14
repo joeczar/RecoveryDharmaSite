@@ -12,7 +12,7 @@ function AuthorList ({items, title}) {
         {items.map(({author, index}) => {
           const authorName = author && author.name
           return (
-            <li key={index} className='listItem'>
+            <li key={6 + index} className='listItem'>
               <div>
                 <div className='avatar'>
                   {author && author.image && author.image.asset && (

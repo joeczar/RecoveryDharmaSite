@@ -18,7 +18,7 @@ const PostPreview = (props) => {
             className='previewImage'
             src={props.mainImage.asset.fluid.src}
             alt={props.mainImage.alt}
-            width='80em'
+            
           />
         )}
       </div>

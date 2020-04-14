@@ -3,7 +3,6 @@ import { format } from "date-fns"
 import Layout from "../components/layout.js"
 import Article from "./article.js"
 import PortableText from "./portableText.js"
-import Container from "react-bootstrap/Container"
 import AuthorList from "./authorList.js"
 import "./update.css"
 import DWHR from "./DharmaWheel-hr.js"
@@ -18,10 +17,10 @@ const Post = props => {
     mainImage,
     publishedAt,
   } = props.pageContext.node
-  console.log(props)
+  console.log(authors)
   return (
     <Layout pageName={title}>
-      <Container>
+     
         <Article title={title}>
           <div className="excerptAndImageWrapper">
             {mainImage && mainImage.asset && (
@@ -45,7 +44,6 @@ const Post = props => {
             </div>
           </div>
         </Article>
-      </Container>
     </Layout>
   )
 }

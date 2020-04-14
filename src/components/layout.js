@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import SEO from "./seo.js"
 import Header from "./header"
-import Footer from './footer'
+import Footer from "./footer"
 
 import "./layout.css"
 
@@ -36,7 +36,6 @@ const Layout = ({ children, pageName }) => {
       <div className="site">
         <main className="glass">{children}</main>
       </div>
-      
       <Footer />
     </>
   )

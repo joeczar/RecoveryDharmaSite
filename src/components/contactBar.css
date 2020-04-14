@@ -10,5 +10,8 @@
 }
 
 .contactBar a {
-    color:#283445;
+    color:#283445!important;
+}
+.contactBar a:hover {
+    color:#283445!important;
 }
