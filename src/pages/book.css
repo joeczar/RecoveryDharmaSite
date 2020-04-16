@@ -1,66 +1,67 @@
 #bookContainer {
-    background-color: #283445;
-    padding: 1ex;
-  }
+  background-color: #283445;
+  padding: 1ex;
+}
+.columnWrapper {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-start;
+}
+#contactText {
+  font-size: 3ex;
+  font-weight: 100;
+  padding: 2ex;
+}
+
+#rightColumn,
+#leftColumn {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+#bookImg {
+  flex: 1;
+  margin: auto;
+  margin: 2ex;
+}
+#bookText {
+  flex: 1;
+  margin: auto;
+  margin: 2ex;
+}
+.btn {
+  margin: 0.5ex;
+  height: 4ex;
+  padding: 0.6ex;
+  color: #dc9b2c!important;
+  background-color: #555358!important;
+  border: none!important;
+  font-size: large;
+  flex: 1;
+}
+.btn:hover {
+  background-color: #dc9b2c!important;
+  color: #0f1016!important;
+}
+#amazonBtn {
+    height:4ex!important;
+}
+.linkWrapper {
+  flex: 1;
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
   .columnWrapper {
+    flex-direction: column !important;
+  }
+  .container {
     display: flex;
-    flex-direction: row !important;
-    justify-content: flex-start;
+    flex-direction: column !important;
   }
-  #contactText {
-    font-size: 3ex;
-    font-weight: 100;
-    padding: 2ex;
+  p {
+    font-size: x-large;
   }
-  
-  #rightColumn, #leftColumn {
-    display: flex;
-    flex-direction: column!important;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-  }
-  
- #bookImg {
-     flex:1;
-     margin:auto;
-     margin:2ex;
- }
- #bookText {
-     flex:1;
-     margin:auto;
-     margin:2ex;
- }
- .btn {
-    margin:.5ex;
-    height: 4ex;
-   
-    padding:.6ex;
-    color:#DC9B2C;
-    background-color: #555358;
-    border: none;
-    font-size: large;
-    flex:1;
-   
-  } 
-  .file .btn:hover {
-    background-color: #DC9B2C;
-    color: #0F1016;
-  }
-  .linkWrapper {
-      flex:1;
-      width:100%
-  }
-  @media only screen and (max-width: 480px) {
-    .columnWrapper {
-      flex-direction: column !important;
-    }
-    .container{
-        display: flex;
-        flex-direction: column !important;
-    }
-    p {
-        font-size: x-large;
-    }
-  }
-  
+}

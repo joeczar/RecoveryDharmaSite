@@ -22,7 +22,7 @@ export const query = graphql`
 
     bookDownload: allFile(
       sort: { fields: name }
-      filter: { relativeDirectory: { eq: "Book Downloads" } }
+      filter: { relativeDirectory: { regex: "/^Book Downloads$/g" } }
     ) {
       edges {
         node {
@@ -78,7 +78,7 @@ const Book = props => {
     : []
   const bookLinkArray = buildReferenceLinkArray(bookDownload)
   const audioLinkArray = buildReferenceLinkArray(audioBookLinkArray)
-
+  
   return (
     <Layout pageName="Book">
       <Container id="bookContainer">
@@ -96,11 +96,12 @@ const Book = props => {
               And we’re just getting started.
             </p>
             <a 
+                id='amazonBtn'
                 className='btn btn-secondary  dropShadow' 
                 href='https://www.amazon.com/dp/1086040007/'
             >
                 Buy on Amazon!
-            </a>
+                </a>
             <img
               id="bookImg"
               src={data.bookImg.childImageSharp.fluid.originalImg}

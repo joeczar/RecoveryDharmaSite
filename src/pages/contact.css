@@ -33,11 +33,13 @@
   fill: #dc9b2c;
 }
 #rightColumn .socialLinkList {
-  margin: 3ex;
+  margin: auto;
+  flex:1;
+  width:100%;
 }
 .formWrapper {
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 #formTitle {
   text-align: center;

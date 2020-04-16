@@ -11,7 +11,7 @@ import "./resources.css"
 export const query = graphql`
   {
     official: allFile(
-      filter: { relativeDirectory: { regex: "/^Meditations$/g" } }
+      filter: { relativeDirectory: { eq: "Meditations" } }
       sort: { fields: name }
     ) {
       edges {
@@ -27,7 +27,7 @@ export const query = graphql`
     }
     community: allFile(
       filter: {
-        relativeDirectory: { regex: "/^Community Submitted Meditations$/g" }
+        relativeDirectory: { eq: "Community Submitted Meditations" }
       }
       sort: { fields: name }
     ) {
@@ -42,7 +42,7 @@ export const query = graphql`
         }
       }
     }
-    meeting: allFile(sort: {fields: name}, filter: {relativeDirectory: {regex: "/^Meeting Resources$/g"}}) {
+    meeting: allFile(sort: {fields: name}, filter: {relativeDirectory: { eq: "Meeting Resources"}}) {
       edges {
         node {
           extension
@@ -54,7 +54,7 @@ export const query = graphql`
         }
       }
     }
-    promo: allFile(sort: {fields: name}, filter: {relativeDirectory: {regex: "/^Promotional Printouts$/g"}}) {
+    promo: allFile(sort: {fields: name}, filter: {relativeDirectory: {eq: "Promotional Printouts"}}) {
       edges {
         node {
           extension
@@ -66,7 +66,7 @@ export const query = graphql`
         }
       }
     }
-      sangha: allFile(sort: {fields: name}, filter: {relativeDirectory: {regex: "/^Sangha Development$/g"}}) {
+      sangha: allFile(sort: {fields: name}, filter: {relativeDirectory: {eq: "Sangha Development"}}) {
       edges {
         node {
           extension
@@ -78,7 +78,7 @@ export const query = graphql`
         }
       }
     }
-      info: allFile(sort: {fields: name}, filter: {relativeDirectory: {regex: "/^What is Recovery Dharma$/g"}}) {
+      info: allFile(sort: {fields: name}, filter: {relativeDirectory: {eq: "What is Recovery Dharma"}}) {
       edges {
         node {
           extension

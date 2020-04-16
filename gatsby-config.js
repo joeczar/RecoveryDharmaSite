@@ -31,6 +31,10 @@ module.exports = {
       {
         name: 'Book',
         link: '/book'
+      },
+      {
+        name: 'Dana',
+        link: '/dana'
       }
     ]
   },
@@ -60,6 +64,13 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `static`,
+          path: `${__dirname}/src/static`,
+        },
     },    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
