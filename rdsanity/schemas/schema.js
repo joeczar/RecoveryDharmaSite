@@ -12,6 +12,8 @@ import post from './post'
 import author from './author'
 import location from './location'
 import meeting from './meeting'
+import upload from './upload'
+import resource from './resource'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -41,6 +43,8 @@ export default createSchema({
     excerptPortableText,
     location,
     meeting,
+    upload,
+    resource,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent

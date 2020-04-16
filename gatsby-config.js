@@ -23,6 +23,14 @@ module.exports = {
       {
         name: 'Updates',
         link: '/updates'
+      },
+      {
+        name: 'Resources',
+        link: '/resources'
+      },
+      {
+        name: 'Book',
+        link: '/book'
       }
     ]
   },
@@ -52,7 +60,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },
+    },    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

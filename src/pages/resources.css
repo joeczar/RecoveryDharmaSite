@@ -1,0 +1,73 @@
+#resourceContainer {
+    background-color: #283445;
+    padding: 1ex;
+  }
+  .columnWrapper {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+  }
+  .container #one,.container #two,.container #three {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex: 1;
+    margin:auto;
+  }
+  #contactText {
+    font-size: 3ex;
+    font-weight: 100;
+    padding: 2ex;
+  }
+
+ 
+  .file {
+    display: flex;
+    
+    padding:1ex;
+    flex-grow: 3;
+    flex:3;
+    margin: auto;
+    align-content: stretch;
+    width: 100%;
+    margin: .5ex;
+    padding:.5ex;
+    border-bottom: 1px solid #555358;
+    color: lightgray;
+  }
+  .fileName {
+    font-size: larger;
+    flex:3;
+  }
+  .file .btn {
+    margin:.5ex;
+    height: 4ex;
+   
+    padding:.6ex;
+    color:#DC9B2C;
+    background-color: #555358;
+    border: none;
+    font-size: large;
+    flex:1;
+    align-self: flex-end;
+  } 
+  .file .btn:hover {
+    background-color: #DC9B2C;
+    color: #0F1016;
+  }
+  .linkWrapper ul {
+    margin-left:0ex;
+  }
+  .linkWrapper {
+    background-color:#283445;
+    padding:2ex;
+    margin:0px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .columnWrapper {
+      flex-direction: column !important;
+    }
+  }
+  

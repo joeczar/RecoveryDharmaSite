@@ -6,9 +6,12 @@ import Twitter from '../svg/Twitter.svg'
 import './socialLinks.css'
 
 const socialList = [
-  ["Facebook", "https://www.facebook.com/recoverydharmaberlin/", <Facebook className='socialIcons' />],
-  ["Instagram", "https://www.instagram.com/p/BjULKRwDAfO/?hl=de", <Instagram className='socialIcons' />],
-  ["Twitter", "https://twitter.com/GermanyDharma", <Twitter className='socialIcons' />],
+  ["Facebook", "https://www.facebook.com/recoverydharmaberlin/", 
+    <Facebook className='socialIcons' />],
+  ["Instagram", "https://www.instagram.com/berlinrecoverydharma/", 
+    <Instagram className='socialIcons' />],
+  ["Twitter", "https://twitter.com/GermanyDharma", 
+    <Twitter className='socialIcons' />],
 ]
 
 

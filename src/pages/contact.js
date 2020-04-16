@@ -20,7 +20,7 @@ export default () => (
           </p>
         </Container>
         <Container id="rightColumn">
-          <ContactForm />
+          <ContactForm className='dropShadow' />
           <SocialLinks />
         </Container>
       </div>

@@ -30,7 +30,7 @@
   height: 5ex;
 }
 #rightColumn .socialIcons:hover {
-    fill:#DC9B2C;
+  fill: #dc9b2c;
 }
 #rightColumn .socialLinkList {
   margin: 3ex;
@@ -55,10 +55,17 @@
   height: 10ex;
 }
 #submit {
-    -webkit-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
+  background-color: #555358;
+  color:#dc9b2c;
+  -webkit-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
   -moz-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
   box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
 }
+#submit:hover {
+  background-color: #dc9b2c;
+  color:#0F1016;
+}
+
 @media only screen and (max-width: 480px) {
   .columnWrapper {
     flex-direction: column !important;

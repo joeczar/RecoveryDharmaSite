@@ -139,6 +139,7 @@ button { background: #555358;
 }
 button:hover {
   background-color: var(--headline-color);
+  color: #0F1016;
 }
 select {
   text-transform: none;
@@ -703,6 +704,11 @@ pre tt:after {
 #bgWheel {
   z-index: 0;
   position:absolute;
+}
+.dropShadow {
+  -webkit-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
 }
 @media only screen and (max-width: 480px) {
   html {

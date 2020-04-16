@@ -1,3 +1,10 @@
 #meetings {
    height: 100%;
 }
+@media only screen and (max-width: 480px) {
+   #meetingTables {
+      display:flex;
+      justify-content: center;
+      align-content: center;
+   }
+}
