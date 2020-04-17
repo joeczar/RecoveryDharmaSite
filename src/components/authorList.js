@@ -6,7 +6,7 @@ import './authorList.css'
 function AuthorList ({items, title}) {
 
   return (
-    <div className='root'>
+    <div className='wrapper'>
       <h2 className='headline'>{title}</h2>
       <ul className='list'>
         {items.map(({author, index}) => {

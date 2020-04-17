@@ -17,6 +17,7 @@ export default () => (
           </p>
         </Container>
         <Container id="rightColumn">
+            <Container>
          <h2>Steady</h2>
          <p>
              Steady is a subscription service that automatically donates your specified amout every month. Set it and forget it. It requires an account sign-up and lets you pay with Pay-Pal, credit Cards and Direct Debit.
@@ -27,11 +28,14 @@ export default () => (
         >
             Steady
         </a>
+        </Container>
+        <Container>
         <h2>PayPal</h2>
         <p>
             For those who don't wish to sign up for a subscription service, we have a PayPal you may also use to contribute your Dana.
         </p>
         <a href='#paypal' className='btn btn-secondary  dropShadow'>PayPal</a>
+        </Container>
         </Container>
       </div>
     </Container>

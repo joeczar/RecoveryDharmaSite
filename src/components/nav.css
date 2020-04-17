@@ -1,11 +1,11 @@
 
-  a {
+ .nav-item a {
     text-decoration: none;
     font-size: 20px;
     color: lightgray;
     display:block;
     }
-    a:hover {
+    .nav-item a:hover {
         color: white;
     }
   
@@ -25,17 +25,21 @@
     background-image: url("../images/DharmaWheel.png")!important    ;
   }
   .navbar-toggler-icon:hover {
-    background-image: url("../images/DharmaWheel-mustard.png")!important    ;
+    background-image: url("../images/DharmaWheel.png")!important    ;
   
   } 
   .navbar {
  
     padding-top: 1ex;
   }
-  #navSocial {
-
+  .nav-item ul  {
+    width:30ex;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
   }
   .nav-item .socialIcons {
     height: 2ex !important;
     fill: #DED596;
   }
+ 

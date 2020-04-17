@@ -7,10 +7,10 @@
   flex-direction: row !important;
   justify-content: flex-start;
 }
-#contactText {
+#bookText {
   font-size: 3ex;
-  font-weight: 100;
-  padding: 2ex;
+  
+  
 }
 
 #rightColumn,
@@ -46,9 +46,21 @@
   background-color: #dc9b2c!important;
   color: #0f1016!important;
 }
-#amazonBtn {
-    height:4ex!important;
+#btnWrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-left:10ex;
+    padding-right: 10ex;
+    
 }
+#amazonBtn .btn {
+    align-self: center;
+    margin:auto;      
+}
+
 .linkWrapper {
   flex: 1;
   width: 100%;

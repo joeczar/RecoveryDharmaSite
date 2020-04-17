@@ -86,7 +86,7 @@ const Book = props => {
         <hr />
         <div className="columnWrapper">
           <Container id="leftColumn">
-           
+           <div id='bookLinkWrapper'>
             <p id="bookText">
               We’re proud and humbled to announce that the official First
               Edition of our book is now available on Amazon! 100% of royalties
@@ -95,6 +95,7 @@ const Book = props => {
               downloads from our website. This is ours. It will always be ours.
               And we’re just getting started.
             </p>
+            <div id='btnWrapper'>
             <a 
                 id='amazonBtn'
                 className='btn btn-secondary  dropShadow' 
@@ -102,6 +103,8 @@ const Book = props => {
             >
                 Buy on Amazon!
                 </a>
+                </div>
+                </div>
             <img
               id="bookImg"
               src={data.bookImg.childImageSharp.fluid.originalImg}

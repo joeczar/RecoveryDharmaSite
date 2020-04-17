@@ -11,6 +11,8 @@ import GraphQLErrorList from "../components/graphql-error-list"
 import Container from "react-bootstrap/Container"
 import { graphql } from "gatsby"
 
+import './updates.css'
+
 export const query = graphql`{
     site: allSanitySiteSettings {
       edges {
@@ -73,8 +75,9 @@ const Updates = props => {
 
   return (
     <Layout pageName="Updates">
-      <Container>
+      <Container id='updates'>
         <h1 className="pageName">Updates</h1>
+        <hr />
         <PostPreviewList
           nodes={postNodes}
         />

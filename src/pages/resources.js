@@ -125,9 +125,9 @@ const Resources = props => {
   
   return (
     <Layout pageName="Rescources">
-      
+      <Container id='resources'>
         <h1 className="pageName">Rescources</h1>
-        
+        <hr />
         <div className="columnWrapper">
           <Container id="one">
             <LinkArrayList props= {meetingLinkArray} />
@@ -142,7 +142,7 @@ const Resources = props => {
           <LinkArrayList props={infoLinkArray} />
           </Container>
         </div>
-      
+        </Container>
     </Layout>
   )
 }

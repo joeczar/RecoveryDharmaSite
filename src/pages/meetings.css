@@ -1,6 +1,6 @@
 #meetings {
    height: 100%;
-
+   background-color: #283445bd;
 }
 #infoHeadline {
    background-color: #dc9b2c;
@@ -37,6 +37,11 @@
    text-align: center;
    margin-bottom:2ex;
 }
+#meetingInfo {
+   font-size: larger;
+   text-align: center;
+}
+
 @media only screen and (max-width: 480px) {
    #meetingTables {
       display:flex;

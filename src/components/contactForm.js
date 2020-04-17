@@ -56,7 +56,7 @@ export default class Contact extends React.Component {
           <p>
             
               <input 
-                className='input'
+                className='input dropShadow'
                 type="text" 
                 name="name" 
                 placeholder="Your Name" 
@@ -67,7 +67,7 @@ export default class Contact extends React.Component {
           <p>
             
               <input 
-                className='input'
+                className='input dropShadow'
                 type="email" 
                 name="email" 
                 placeholder='Email Address' onChange={this.handleChange} 
@@ -77,7 +77,7 @@ export default class Contact extends React.Component {
           <p>
             
               <textarea 
-                className='input textArea'
+                className='input textArea  dropShadow'
                 name="message" 
                 placeholder="Your message..." 
                 onChange={this.handleChange} 
@@ -86,7 +86,7 @@ export default class Contact extends React.Component {
           </p>
           <p>
             <button id='submit'
-            className='btn' type="submit">Send</button>
+            className='btn  dropShadow' type="submit">Send</button>
           </p>
         </form>
       </div>

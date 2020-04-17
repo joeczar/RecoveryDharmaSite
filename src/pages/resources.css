@@ -5,15 +5,18 @@
   .columnWrapper {
     display: flex;
     flex-direction: row !important;
-    justify-content: flex-start;
+   
+    
   }
   .container #one,.container #two,.container #three {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
+    align-self: baseline;
     flex: 1;
     margin:auto;
+    margin-top:0px;
   }
   #contactText {
     font-size: 3ex;
@@ -64,10 +67,19 @@
     padding:2ex;
     margin:0px;
   }
+  #resources {
+    background-color: #283445;
+    
+  }
   
   @media only screen and (max-width: 480px) {
     .columnWrapper {
       flex-direction: column !important;
+      margin:0px;
+      padding: 0px;
+    }
+    .container {
+      margin: 0px!important;
     }
   }
   

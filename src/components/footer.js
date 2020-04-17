@@ -5,9 +5,9 @@ import './footer.css'
 
 export default () => (
     <footer id="footer">
-        <div id="copyright">
-          © {new Date().getFullYear()}, Recovery Dharma Germany
-        </div>
+        
+         <p id="copyright"> © {new Date().getFullYear()}, Recovery Dharma Germany</p>
+       
         <Link to='/impressum' id='impressumlLink'>Impressum</Link>
       </footer>
 )

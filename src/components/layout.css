@@ -660,23 +660,6 @@ pre tt:after {
 }
 
 
-/* transformations */
-.glass.down {
-  transform: translateY(100%) translateY(-5em) translateZ(0);
-}
-
-.glass.down::before {
-  transform: translateY(-100%) translateY(5em) translateZ(0);
-}
-
-.glass.up, .glass.up::before {
-  transform: translateY(0) translateZ(0);
-}
-
-/* transitions */
-.glass, .glass::before {
-  transition: transform 0.5s ease-out;
-}
 .container {
   margin-top:2ex;
   margin-bottom: 2ex;
@@ -706,9 +689,12 @@ pre tt:after {
   position:absolute;
 }
 .dropShadow {
-  -webkit-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
-  box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0,0.5);
+  box-shadow: 10px 10px 9px -4px rgba(0, 0, 0,0.5);
+}
+.pageName {
+  text-align: center;
 }
 @media only screen and (max-width: 480px) {
   html {

@@ -11,12 +11,30 @@
     flex-direction: row;
     flex-wrap: wrap;
     color: #DC9B2C;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
 .excerpt {
     margin-left:1ex;
 }
 .mainImage{
-    background-color: #0F1016;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.mainImage img {
+    margin: auto;
+}
+.wrapper {
+    font-size: large;
+    text-align: center;
+}
+.wrapper h2 {
+    font-size: large;
+    text-align: center;
+    
 }
 @media only screen and (max-width: 480px) {
     .glass {

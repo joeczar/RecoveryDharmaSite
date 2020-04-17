@@ -6,14 +6,29 @@
     justify-content: space-around;
   }
   #copyright {
-      flex:1;
+      
+      margin-bottom: 0px;
+      justify-content: start;
+      align-content: flex-start;
+  }
+  #footer p {
+    flex:1;
+    width:50%;
+    font-size: small;
+    margin-bottom: 0px;
+    display: block;
   }
   #impressumLink {
-      color:lightgray;
-      top:-1ex;
+        flex:1;
+      margin-bottom: 0px;
+      justify-content: start;
+      align-content: flex-start;
+      
+      
   }
   #footer a {
       color: #DC9B2C;
+      display: block;
   }
   #footer a:hover {
     color: #DC9B2C;

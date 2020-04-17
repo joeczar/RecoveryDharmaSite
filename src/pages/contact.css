@@ -7,10 +7,9 @@
   flex-direction: row !important;
   justify-content: flex-start;
 }
-#contactText {
+#leftColumn p {
   font-size: 3ex;
-  font-weight: 100;
-  padding: 2ex;
+ font-weight: 400;
 }
 #leftColumn {
   display: flex;
@@ -49,9 +48,7 @@
   background-color: #d3d3d3;
   border: 0px;
   padding: 0.5ex;
-  -webkit-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
-  box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
+  
 }
 .textArea {
   height: 10ex;
@@ -59,9 +56,8 @@
 #submit {
   background-color: #555358;
   color:#dc9b2c;
-  -webkit-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
-  box-shadow: 10px 10px 9px -4px rgba(0, 0, 0, 1);
+  height:5ex;
+  
 }
 #submit:hover {
   background-color: #dc9b2c;

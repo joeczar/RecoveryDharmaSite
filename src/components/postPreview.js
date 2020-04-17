@@ -11,7 +11,7 @@ const PostPreview = (props) => {
       className='postLink'
       to={getBlogUrl(props.publishedAt, props.slug.current)}
     >
-    <div className='postPreviewWrapper'>
+    <div className='postPreviewWrapper dropShadow'>
       <div className='imageWrapper'>
         {props.mainImage && props.mainImage.asset && (
           <img
