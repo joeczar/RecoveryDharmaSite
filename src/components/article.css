@@ -18,7 +18,7 @@ article a:hover {
 .articleWrapper h1 {
     line-height: 3ex;
     margin-top: 1em;
- 
+    text-align: center;
 }
 .articleWrapper {
     display:flex;
