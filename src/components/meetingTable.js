@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container"
 import "./meetingTable.css"
 
 export default ({ day, time, location }) => (
-  <Container className="meetingWrapper">
+  <Container className="meetingWrapper dropShadow">
     <div className="dayWrapper">
       <h1 className="day">{day}</h1>
     </div>
