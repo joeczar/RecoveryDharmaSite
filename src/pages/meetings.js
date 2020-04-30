@@ -4,6 +4,12 @@ import MeetingTable from "../components/meetingTable.js"
 import ContactBar from "../components/contactBar"
 import Container from "react-bootstrap/Container"
 import { useStaticQuery, graphql } from "gatsby"
+import GraphQLErrorList from "../components/graphql-error-list"
+import PortableText from "../components/portableText.js"
+import {
+  mapEdgesToNodes,
+} from "../lib/helpers"
+
 import "./meetings.css"
 
 const Meetings = () => {
@@ -13,6 +19,7 @@ const Meetings = () => {
         totalCount
         edges {
           node {
+            _rawDescription
             day
             time
             location {
@@ -26,7 +33,7 @@ const Meetings = () => {
       }
     }
   `)
-
+  
   return (
     <Layout pageName="Meetings">
       <div id="infoHeadline">
@@ -59,6 +66,8 @@ const Meetings = () => {
         <div id="meetingTables">
           {data.allSanityMeeting.edges.map((meeting, index) => (
             <MeetingTable
+              
+              description={meeting.node._rawDescription && <PortableText blocks={meeting.node._rawDescription} />}
               day={meeting.node.day}
               time={meeting.node.time}
               location={meeting.node.location}

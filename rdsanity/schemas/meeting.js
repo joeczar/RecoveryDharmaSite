@@ -20,6 +20,12 @@ export default {
             title: 'Location',
             type: 'reference',
             to: {type: 'location'}
+        },
+        {
+            name: 'description',
+            title: 'Description',
+            type: 'excerptPortableText',
+            description: 'Give us a few sentences about this meeting. What kind of meeting is it? Normal Meditation and Share? Speaker?'
         }
     ]
 }
