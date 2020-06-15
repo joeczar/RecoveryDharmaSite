@@ -40,7 +40,7 @@ const NotFoundPage = () => (
           13189 Berlin
         </p>
 
-        <p>E-Mail: webmaster (at) recoverydharma.org</p>
+        <p>E-Mail: webmaster (at) recoverydharma.de</p>
 
         <p>
           Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Garry Czarnecki

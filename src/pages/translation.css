@@ -1,0 +1,23 @@
+#translationContainer {
+    background-color: #283445;
+    padding: 1ex;
+  }
+  .flexRowWrapper {
+      display: flex;
+      flex-direction: row;
+  }
+  #english p {
+    font-size: 3ex;
+   font-weight: 400;
+  }
+  #english {
+    display: flex;
+    
+    flex: 1;
+  }
+  #german {
+    display: flex;
+    flex-direction: column;
+    
+    flex: 1;
+  }
