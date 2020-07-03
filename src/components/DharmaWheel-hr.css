@@ -13,7 +13,7 @@
     width:2ex;
     fill:#DC9B2C;
     position: relative;
-    top:-1.9ex;
+    top:-2ex;
 
 }
 .hr {
@@ -25,5 +25,5 @@
 .dot {
     margin:.5ex;
     position: relative;
-   top:-1.9ex
+   top:-2ex
 }
