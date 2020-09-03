@@ -1,29 +1,32 @@
-import {format, isFuture} from 'date-fns'
+import { format, isFuture } from "date-fns"
 
-export function cn (...args) {
-  return args.filter(Boolean).join(' ')
+export function cn(...args) {
+  return args.filter(Boolean).join(" ")
 }
 
-export function mapEdgesToNodes (data) {
+export function mapEdgesToNodes(data) {
   if (!data.edges) return []
   return data.edges.map(edge => edge.node)
 }
 
-export function filterOutDocsWithoutSlugs ({slug}) {
+export function filterOutDocsWithoutSlugs({ slug }) {
   return (slug || {}).current
 }
 
-export function filterOutDocsPublishedInTheFuture ({publishedAt}) {
+export function filterOutDocsPublishedInTheFuture({ publishedAt }) {
   return !isFuture(publishedAt)
 }
 
-export function getBlogUrl (publishedAt, slug) {
-  return `/updates/${format(new Date(publishedAt), 'dd-MM-yyyy')}/${slug.current || slug}/`
+export function getBlogUrl(publishedAt, slug) {
+  return `/updates/${format(
+    new Date(publishedAt),
+    "dd-MM-yyyy"
+  )}/${slug.current || slug}/`
 }
 
-export function buildImageObj (source = {asset: {}}) {
+export function buildImageObj(source = { asset: {} }) {
   const imageObj = {
-    asset: {_ref: source.asset._ref || source.asset._id}
+    asset: { _ref: source.asset._ref || source.asset._id },
   }
 
   if (source.crop) imageObj.crop = source.crop
@@ -32,25 +35,21 @@ export function buildImageObj (source = {asset: {}}) {
   return imageObj
 }
 
-export function toPlainText (blocks) {
+export function toPlainText(blocks) {
   if (!blocks) {
-    return ''
+    return ""
   }
   return blocks
     .map(block => {
-      if (block._type !== 'block' || !block.children) {
-        return ''
+      if (block._type !== "block" || !block.children) {
+        return ""
       }
-      return block.children.map(child => child.text).join('')
+      return block.children.map(child => child.text).join("")
     })
-    .join('\n\n')
+    .join("\n\n")
 }
-export const objectMap = (obj, fn) => 
-Object.fromEntries(
-    Object.entries(obj).map(
-        ([k,v], i) => [k, fn(v, k, i)]
-    )
-)
+export const objectMap = (obj, fn) =>
+  Object.fromEntries(Object.entries(obj).map(([k, v], i) => [k, fn(v, k, i)]))
 
 export const buildReferenceLinkArray = arr => {
   class ResourceLink {
@@ -61,15 +60,22 @@ export const buildReferenceLinkArray = arr => {
       this.directory = dir
     }
   }
-  // 1. create array of rescourceLinks
+  // 1. create array of resourceLinks
   // 2. check array for matching title. If filetype is different push link to link array
   // map query to array of ResourceLink objects
   const linkArr = arr.map(
-    elem => new ResourceLink(elem.name, elem.publicURL, elem.extension, elem.id, elem.relativeDirectory)
+    elem =>
+      new ResourceLink(
+        elem.name,
+        elem.publicURL,
+        elem.extension,
+        elem.id,
+        elem.relativeDirectory
+      )
   )
   const acc = []
   for (let i = 0; i < linkArr.length; i++) {
-    if (acc.length > 0 && acc[acc.length - 1].title == linkArr[i].title) {
+    if (acc.length > 0 && acc[acc.length - 1].title === linkArr[i].title) {
       //if titles match, push just links to last element
       acc[acc.length - 1].links.push(linkArr[i].links[0])
     } else {

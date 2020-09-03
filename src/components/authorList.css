@@ -1,7 +1,8 @@
-.wrapper {
- 
-}
-
 .list {
-    list-style-type: none;
+  list-style-type: none;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }

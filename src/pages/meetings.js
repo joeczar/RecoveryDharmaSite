@@ -4,11 +4,7 @@ import MeetingTable from "../components/meetingTable.js"
 import ContactBar from "../components/contactBar"
 import Container from "react-bootstrap/Container"
 import { useStaticQuery, graphql } from "gatsby"
-import GraphQLErrorList from "../components/graphql-error-list"
 import PortableText from "../components/portableText.js"
-import {
-  mapEdgesToNodes,
-} from "../lib/helpers"
 
 import "./meetings.css"
 
@@ -33,7 +29,7 @@ const Meetings = () => {
       }
     }
   `)
-  
+
   return (
     <Layout pageName="Meetings">
       <div id="infoHeadline">
@@ -41,8 +37,9 @@ const Meetings = () => {
           <h2 id="Headline">COVID-19 Meeting Info</h2>
           <div className="headlineDiv" id="headLineMain">
             <p id="HeadlineBody">
-              During the lockdown caused by the COVID-19 Pandemic, all Recovery
-              Dharma meetings will be held online with Zoom. (We are working on moving to Jitsi, but need some time).
+              During the lockdown caused by the COVID-19 Pandemic, only the
+              Wednesday meeting will be in-person at the Buddhist Centre. All
+              other Recovery Dharma meetings will be held online with Zoom.
             </p>
           </div>
           <div className="headlineDiv" id="headLineLink">
@@ -66,8 +63,11 @@ const Meetings = () => {
         <div id="meetingTables">
           {data.allSanityMeeting.edges.map((meeting, index) => (
             <MeetingTable
-              
-              description={meeting.node._rawDescription && <PortableText blocks={meeting.node._rawDescription} />}
+              description={
+                meeting.node._rawDescription && (
+                  <PortableText blocks={meeting.node._rawDescription} />
+                )
+              }
               day={meeting.node.day}
               time={meeting.node.time}
               location={meeting.node.location}
@@ -75,7 +75,6 @@ const Meetings = () => {
             />
           ))}
         </div>
-        
       </Container>
       <ContactBar />
     </Layout>

@@ -1,46 +1,45 @@
 .articleTitle {
-    text-align: center;
+  text-align: center;
 }
 
 .root {
-   text-align: right;
-    justify-self: right;
+  text-align: right;
+  justify-self: right;
 }
 .excerptDateWrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: #DC9B2C;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #dc9b2c;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 .excerpt {
-    margin-left:1ex;
+  margin-left: 1ex;
 }
-.mainImage{
-    margin:auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.mainImage {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .mainImage img {
-    margin: auto;
+  margin: auto;
 }
 .wrapper {
-    font-size: large;
-    text-align: center;
+  font-size: large;
+  text-align: center;
 }
 .wrapper h2 {
-    font-size: large;
-    text-align: center;
-    
+  font-size: large;
+  text-align: center;
 }
 @media only screen and (max-width: 480px) {
-    .glass {
-        padding: 0px;
-    }
-    .articleWrapper .container {
-        padding: 2ex!important;
-    }
+  .glass {
+    padding: 0px;
+  }
+  .articleWrapper .container {
+    padding: 2ex !important;
+  }
 }
