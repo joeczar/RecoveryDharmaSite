@@ -1,52 +1,47 @@
 .postPreviewWrapper {
-    background-color: #555358;
-    padding: 1ex;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: start;
+  background-color: #555358;
+  padding: 1ex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .postList a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 .imageWrapper {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   text-align: center;
-   align-content: center;
-   flex:1;
-   margin:auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  flex: 1;
+  margin: auto;
 }
 .previewImage {
-    max-height: 30ex;
-    
-    
-    
+  max-height: 30ex;
 }
 .postPreviewBody {
-    margin:1ex;
-    flex:3;
+  margin: 1ex;
+  flex: 3;
 }
 
 .postList {
-    margin:0;
+  margin: 0;
 }
 @media only screen and (max-width: 480px) {
-    .postPreviewWrapper {
-        flex-direction: column;
-    }
-    .image-wrapper {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        margin:auto!important;
-    
-    }
-    .previewImage {
-        max-height: 100%;
-        align-self: center;
-        
-    }
+  .postPreviewWrapper {
+    flex-direction: column;
+  }
+  .image-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto !important;
+  }
+  .previewImage {
+    max-height: 100%;
+    align-self: center;
+  }
 }
