@@ -5,8 +5,9 @@ import ContactBar from "../components/contactBar"
 import Container from "react-bootstrap/Container"
 import { useStaticQuery, graphql } from "gatsby"
 import PortableText from "../components/portableText.js"
-
+import Message from "../components/message.js"
 import "./meetings.css"
+
 
 const Meetings = () => {
   const data = useStaticQuery(graphql`
@@ -32,26 +33,7 @@ const Meetings = () => {
 
   return (
     <Layout pageName="Meetings">
-      <div id="infoHeadline">
-        <Container>
-          <h2 id="Headline">COVID-19 Meeting Info</h2>
-          <div className="headlineDiv" id="headLineMain">
-            <p id="HeadlineBody">
-              During the lockdown caused by the COVID-19 Pandemic, only the
-              Wednesday meeting will be in-person at the Buddhist Centre. All
-              other Recovery Dharma meetings will be held online with Zoom.
-            </p>
-          </div>
-          <div className="headlineDiv" id="headLineLink">
-            <a
-              href="https://zoom.us/j/4939374385?pwd=dTBHVkFoOFBieS9wcmhtVzZvWVNCUT09"
-              className="btn dropShadow"
-            >
-              Join an Online Meeting
-            </a>
-          </div>
-        </Container>
-      </div>
+      <Message page="meetingPage" />
       <Container id="meetings">
         <h1 className="pageName">Meetings</h1>
         <div id="meetingInfo">

@@ -1,5 +1,5 @@
 import { format } from "date-fns"
-
+import sanityClient, { isUnique } from '@sanity/base'
 export default {
   name: "post",
   type: "document",
@@ -20,7 +20,7 @@ export default {
       options: {
         source: "title",
         maxLength: 96,
-        isUnique: isUniqueAcrossAllDocuments,
+        isUnique: isUnique,
       },
     },
     {

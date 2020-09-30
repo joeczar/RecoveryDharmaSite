@@ -1,0 +1,39 @@
+/* 
+#9DA2AB Silver Metallic
+#D5B870 vegas Gold
+#138A36 Forrest Green Web
+#D64045 English Vermilion
+#045372 Blue Sapphire
+*/
+.message {
+  background-color: #9DA2AB;
+  padding: .5em 2em .5em 2em;
+  color: #0F1016;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.message h1, .message h2, .message h3, .message h4, .message h5, .message h6 {
+  color: #0F1016;
+  margin: auto;
+}
+.message a {
+  color: #045372;
+}
+.messageBody, .messageButton {
+  margin: auto;
+}
+.green {
+  background-color: #138A36;
+  color:white;
+}
+.yellow {
+  background-color: #D5B870;
+}
+.red {
+  background-color: #D64045;
+  color:white;
+}
+.green h1, .green h2, .green h3, .green h4, .green h5, .green h6, .red h1, .red h2, .red h3, .red h4, .red h5, .red h6{
+  color:white;
+}

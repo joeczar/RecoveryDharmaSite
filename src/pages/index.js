@@ -7,15 +7,17 @@ import ContactBar from "../components/contactBar.js"
 import DharmaWheel from '../svg/DharmaWheel.svg'
 
 import './home.css'
+import Message from "../components/message"
 
 const IndexPage = () => (
-  <Layout pageName='Home'>
+  <Layout pageName="Home">
     <Headline
-      title='Using Buddhist Practices and Principles to Heal the Suffering of
-      Addiction'
+      title="Using Buddhist Practices and Principles to Heal the Suffering of
+      Addiction"
     >
-      <DharmaWheel fill='lightgray' width='4ex'/>
+      <DharmaWheel fill="lightgray" width="4ex" />
     </Headline>
+    <Message page="homePage" />
     <Article
       id="homeArticle"
       title="We are a peer-led movement and community that is unified by our trust in the potential of each of us to recover and find freedom from the suffering of addiction. We believe that recovery means empowerment, and we support each other as partners walking the path of recovery together."
