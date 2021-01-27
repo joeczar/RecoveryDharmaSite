@@ -8,7 +8,6 @@ import PortableText from "../components/portableText.js"
 import Message from "../components/message.js"
 import "./meetings.css"
 
-
 const Meetings = () => {
   const data = useStaticQuery(graphql`
     {
@@ -36,12 +35,7 @@ const Meetings = () => {
       <Message page="meetingPage" />
       <Container id="meetings">
         <h1 className="pageName">Meetings</h1>
-        <div id="meetingInfo">
-          <p>
-            All meetings open <b>30 min</b> before the official start time and
-            are <b>90 min</b> long.
-          </p>
-        </div>
+
         <div id="meetingTables">
           {data.allSanityMeeting.edges.map((meeting, index) => (
             <MeetingTable
