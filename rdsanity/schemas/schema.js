@@ -12,6 +12,7 @@ import post from './post'
 import author from './author'
 import location from './location'
 import meeting from './meeting'
+import social from './social'
 
 
 
@@ -45,7 +46,7 @@ export default createSchema({
     location,
     meeting,
     message,
-    
+    social,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent
